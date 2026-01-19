@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/****************************************************
+ *******************   VARIABLES   ******************
+ ****************************************************/
+
+:root {
+  /* Colors */
+  --clr-orange: #fc7614;
+  --clr-grey-500: #969fad;
+  --clr-grey-900: #262e38;
+  --clr-grey-950: #131518;
+  --clr-white: #ffffff;
+
+  /* Typography */
+  --ff-overpass: "Overpass", sans-serif;
+
+  /* Font Size */
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+
+  /* Font Weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Line Height */
+  --lh-150: 1.5;
+
+  /* Spacing */
+  --sp-0: 0rem;
+  --sp-8: 0.5rem;
+  --sp-16: 1rem;
+  --sp-24: 1.5rem;
+  --sp-32: 2rem;
+  --sp-40: 2.5rem;
+  --sp-104: 6.5rem;
+  --sp-136: 8.5rem;
+}
+
+/****************************************************
+ ********************   RESET   *********************
+ ****************************************************/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: var(--ff-overpass);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-150);
+  background-color: var(--clr-grey-950);
+  color: var(--clr-white);
+}
+
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
